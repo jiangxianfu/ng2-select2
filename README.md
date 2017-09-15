@@ -72,6 +72,8 @@ Example of `exampleData` can be found [here](https://github.com/NejcZdovc/ng2-se
 ### Outputs
 * **valueChanged** `string`: Emitted when value changes in select 2 drop down 
 
+* **itemsChanged** `string`: Emitted when items changes in select 2 drop down jiangxf add split from ngOnChanges
+
 
 ## Demo
 
