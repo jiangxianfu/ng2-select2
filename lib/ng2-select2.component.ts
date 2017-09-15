@@ -39,6 +39,9 @@ export class Select2Component implements AfterViewInit, OnChanges, OnDestroy, On
     // emitter when value is changed
     @Output() valueChanged = new EventEmitter();
 
+    //jiangxf add itemsChanged
+    @Output() itemsChanged = new EventEmitter();
+
     private element: JQuery = undefined;
     private check: boolean = false;
 
@@ -68,7 +71,8 @@ export class Select2Component implements AfterViewInit, OnChanges, OnDestroy, On
             this.initPlugin();
 
             const newValue: string = this.element.val();
-            this.valueChanged.emit({
+            //add itemsChanged
+            this.itemsChanged.emit({
                 value: newValue,
                 data: this.element.select2('data')
             });
