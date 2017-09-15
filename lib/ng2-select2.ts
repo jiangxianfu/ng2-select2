@@ -9,4 +9,4 @@ export { Select2Component } from './ng2-select2.component';
     declarations: [Select2Component],
     exports: [Select2Component]
 })
-export class Select2Module {}
+export class Select2ModuleEx {}
